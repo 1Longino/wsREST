@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.maven.ide.eclipse.ui.internal.preferences.RemoteArchetypeCatalogDialog">
+		<list key="catalogUrl">
+			<item value="https://repo.maven.apache.org/maven2/"/>
+			<item value="maven-archetype-webapp"/>
+			<item value="org.apache.maven.archetypes"/>
+		</list>
+	</section>
+</section>

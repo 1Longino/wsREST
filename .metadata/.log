@@ -1,0 +1,1920 @@
+!SESSION 2023-08-17 12:16:07.289 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.7.0 IBM J9 2.6 Windows Vista amd64-64 Compressed References 20120322_106209 (JIT enabled, AOT enabled)
+J9VM - R26_Java726_SR1_20120322_1720_B106209
+JIT  - r11_20120322_22976
+GC   - R26_Java726_SR1_20120322_1720_B106209_CMPRSS
+J9CL - 20120322_106209
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_MX
+Framework arguments:  -product com.ibm.rational.rad.product.v85.ide
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ibm.rational.rad.product.v85.ide
+
+This is a continuation of log file C:\projects\wsREST_maven_FINAL\.metadata\.bak_0.log
+Created Time: 2023-08-17 12:25:07.439
+
+!ENTRY org.maven.ide.eclipse 4 -1 2023-08-17 12:25:07.440
+!MESSAGE Could not get mojo execution paramater value
+!STACK 0
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-compiler-plugin:2.0.2 or one of its dependencies could not be resolved: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.EclipsePluginDependenciesResolver.resolve(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(Unknown Source)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(Unknown Source)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.getMojoParameterValue(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.addProjectSourceFolders(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.GenericJavaProjectConfigurator.addProjectSourceFolders(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.configure(Unknown Source)
+	at org.maven.ide.eclipse.project.configurator.AbstractLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.GenericLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.configureNewMavenProject(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.enableMavenNature(Unknown Source)
+	at org.maven.ide.eclipse.actions.EnableNatureAction.enableNature(Unknown Source)
+	at org.maven.ide.eclipse.actions.EnableNatureAction.run(Unknown Source)
+	at org.maven.ide.eclipse.actions.AbstractMavenMenuCreator$ActionProxy.run(Unknown Source)
+	at org.eclipse.jface.action.Action.runWithEvent(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.artifact.resolver.DefaultResolutionErrorHandler.throwErrors(Unknown Source)
+	... 46 more
+
+!ENTRY org.maven.ide.eclipse 4 -1 2023-08-17 12:25:07.442
+!MESSAGE Could not get mojo execution paramater value
+!STACK 0
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-compiler-plugin:2.0.2 or one of its dependencies could not be resolved: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.EclipsePluginDependenciesResolver.resolve(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(Unknown Source)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(Unknown Source)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.getMojoParameterValue(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.addProjectSourceFolders(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.GenericJavaProjectConfigurator.addProjectSourceFolders(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.configure(Unknown Source)
+	at org.maven.ide.eclipse.project.configurator.AbstractLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.GenericLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.configureNewMavenProject(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.enableMavenNature(Unknown Source)
+	at org.maven.ide.eclipse.actions.EnableNatureAction.enableNature(Unknown Source)
+	at org.maven.ide.eclipse.actions.EnableNatureAction.run(Unknown Source)
+	at org.maven.ide.eclipse.actions.AbstractMavenMenuCreator$ActionProxy.run(Unknown Source)
+	at org.eclipse.jface.action.Action.runWithEvent(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.artifact.resolver.DefaultResolutionErrorHandler.throwErrors(Unknown Source)
+	... 46 more
+
+!ENTRY org.maven.ide.eclipse 4 -1 2023-08-17 12:25:07.444
+!MESSAGE Could not get mojo execution paramater value
+!STACK 0
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-compiler-plugin:2.0.2 or one of its dependencies could not be resolved: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.EclipsePluginDependenciesResolver.resolve(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(Unknown Source)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(Unknown Source)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.getMojoParameterValue(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.addProjectSourceFolders(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.GenericJavaProjectConfigurator.addProjectSourceFolders(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.configure(Unknown Source)
+	at org.maven.ide.eclipse.project.configurator.AbstractLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.GenericLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.configureNewMavenProject(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.enableMavenNature(Unknown Source)
+	at org.maven.ide.eclipse.actions.EnableNatureAction.enableNature(Unknown Source)
+	at org.maven.ide.eclipse.actions.EnableNatureAction.run(Unknown Source)
+	at org.maven.ide.eclipse.actions.AbstractMavenMenuCreator$ActionProxy.run(Unknown Source)
+	at org.eclipse.jface.action.Action.runWithEvent(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.artifact.resolver.DefaultResolutionErrorHandler.throwErrors(Unknown Source)
+	... 46 more
+
+!ENTRY org.maven.ide.eclipse 4 0 2023-08-17 12:25:07.851
+!MESSAGE Build error for /iSoccerEAR/pom.xml
+!STACK 0
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-resources-plugin:2.4.1 or one of its dependencies could not be resolved: Missing:
+----------
+1) org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.4.1
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-resources-plugin -Dversion=2.4.1 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-resources-plugin -Dversion=2.4.1 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.4.1
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.EclipsePluginDependenciesResolver.resolve(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(Unknown Source)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(Unknown Source)
+	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.calculateExecutionPlan(Unknown Source)
+	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.execute(Unknown Source)
+	at org.apache.maven.DefaultMaven.doExecute(Unknown Source)
+	at org.apache.maven.DefaultMaven.execute(Unknown Source)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.execute(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.GenericJavaProjectConfigurator.getMavenProjects(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.configure(Unknown Source)
+	at org.maven.ide.eclipse.project.configurator.AbstractLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.GenericLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.actions.EnableNatureAction.enableNature(Unknown Source)
+	at org.maven.ide.eclipse.actions.EnableNatureAction.run(Unknown Source)
+	at org.maven.ide.eclipse.actions.AbstractMavenMenuCreator$ActionProxy.run(Unknown Source)
+	at org.eclipse.jface.action.Action.runWithEvent(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException: Missing:
+----------
+1) org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.4.1
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-resources-plugin -Dversion=2.4.1 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-resources-plugin -Dversion=2.4.1 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.4.1
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.artifact.resolver.DefaultResolutionErrorHandler.throwErrors(Unknown Source)
+	... 48 more
+
+!ENTRY org.maven.ide.eclipse 4 -1 2023-08-17 12:25:07.859
+!MESSAGE Could not get mojo execution paramater value
+!STACK 0
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-compiler-plugin:2.0.2 or one of its dependencies could not be resolved: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.EclipsePluginDependenciesResolver.resolve(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(Unknown Source)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(Unknown Source)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.getMojoParameterValue(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.getCompilerLevel(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.collectOptions(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.configure(Unknown Source)
+	at org.maven.ide.eclipse.project.configurator.AbstractLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.GenericLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.actions.EnableNatureAction.enableNature(Unknown Source)
+	at org.maven.ide.eclipse.actions.EnableNatureAction.run(Unknown Source)
+	at org.maven.ide.eclipse.actions.AbstractMavenMenuCreator$ActionProxy.run(Unknown Source)
+	at org.eclipse.jface.action.Action.runWithEvent(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.artifact.resolver.DefaultResolutionErrorHandler.throwErrors(Unknown Source)
+	... 45 more
+
+!ENTRY org.maven.ide.eclipse 4 -1 2023-08-17 12:25:07.861
+!MESSAGE Could not get mojo execution paramater value
+!STACK 0
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-compiler-plugin:2.0.2 or one of its dependencies could not be resolved: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.EclipsePluginDependenciesResolver.resolve(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(Unknown Source)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(Unknown Source)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.getMojoParameterValue(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.getCompilerLevel(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.collectOptions(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.configure(Unknown Source)
+	at org.maven.ide.eclipse.project.configurator.AbstractLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.GenericLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.actions.EnableNatureAction.enableNature(Unknown Source)
+	at org.maven.ide.eclipse.actions.EnableNatureAction.run(Unknown Source)
+	at org.maven.ide.eclipse.actions.AbstractMavenMenuCreator$ActionProxy.run(Unknown Source)
+	at org.eclipse.jface.action.Action.runWithEvent(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.artifact.resolver.DefaultResolutionErrorHandler.throwErrors(Unknown Source)
+	... 45 more
+
+!ENTRY org.maven.ide.eclipse 4 -1 2023-08-17 12:25:07.863
+!MESSAGE Could not get mojo execution paramater value
+!STACK 0
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-compiler-plugin:2.0.2 or one of its dependencies could not be resolved: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.EclipsePluginDependenciesResolver.resolve(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(Unknown Source)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(Unknown Source)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.getMojoParameterValue(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.getCompilerLevel(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.collectOptions(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.configure(Unknown Source)
+	at org.maven.ide.eclipse.project.configurator.AbstractLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.GenericLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.actions.EnableNatureAction.enableNature(Unknown Source)
+	at org.maven.ide.eclipse.actions.EnableNatureAction.run(Unknown Source)
+	at org.maven.ide.eclipse.actions.AbstractMavenMenuCreator$ActionProxy.run(Unknown Source)
+	at org.eclipse.jface.action.Action.runWithEvent(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.artifact.resolver.DefaultResolutionErrorHandler.throwErrors(Unknown Source)
+	... 45 more
+
+!ENTRY org.maven.ide.eclipse 4 -1 2023-08-17 12:25:07.865
+!MESSAGE Could not get mojo execution paramater value
+!STACK 0
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-compiler-plugin:2.0.2 or one of its dependencies could not be resolved: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.EclipsePluginDependenciesResolver.resolve(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(Unknown Source)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(Unknown Source)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.getMojoParameterValue(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.getCompilerLevel(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.collectOptions(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.configure(Unknown Source)
+	at org.maven.ide.eclipse.project.configurator.AbstractLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.GenericLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.actions.EnableNatureAction.enableNature(Unknown Source)
+	at org.maven.ide.eclipse.actions.EnableNatureAction.run(Unknown Source)
+	at org.maven.ide.eclipse.actions.AbstractMavenMenuCreator$ActionProxy.run(Unknown Source)
+	at org.eclipse.jface.action.Action.runWithEvent(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.artifact.resolver.DefaultResolutionErrorHandler.throwErrors(Unknown Source)
+	... 45 more
+
+!ENTRY org.maven.ide.eclipse 4 -1 2023-08-17 12:25:07.867
+!MESSAGE Could not get mojo execution paramater value
+!STACK 0
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-compiler-plugin:2.0.2 or one of its dependencies could not be resolved: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.EclipsePluginDependenciesResolver.resolve(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(Unknown Source)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(Unknown Source)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.getMojoParameterValue(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.addProjectSourceFolders(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.GenericJavaProjectConfigurator.addProjectSourceFolders(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.configure(Unknown Source)
+	at org.maven.ide.eclipse.project.configurator.AbstractLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.GenericLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.actions.EnableNatureAction.enableNature(Unknown Source)
+	at org.maven.ide.eclipse.actions.EnableNatureAction.run(Unknown Source)
+	at org.maven.ide.eclipse.actions.AbstractMavenMenuCreator$ActionProxy.run(Unknown Source)
+	at org.eclipse.jface.action.Action.runWithEvent(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.artifact.resolver.DefaultResolutionErrorHandler.throwErrors(Unknown Source)
+	... 45 more
+
+!ENTRY org.maven.ide.eclipse 4 -1 2023-08-17 12:25:07.869
+!MESSAGE Could not get mojo execution paramater value
+!STACK 0
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-compiler-plugin:2.0.2 or one of its dependencies could not be resolved: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.EclipsePluginDependenciesResolver.resolve(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(Unknown Source)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(Unknown Source)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.getMojoParameterValue(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.addProjectSourceFolders(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.GenericJavaProjectConfigurator.addProjectSourceFolders(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.configure(Unknown Source)
+	at org.maven.ide.eclipse.project.configurator.AbstractLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.GenericLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.actions.EnableNatureAction.enableNature(Unknown Source)
+	at org.maven.ide.eclipse.actions.EnableNatureAction.run(Unknown Source)
+	at org.maven.ide.eclipse.actions.AbstractMavenMenuCreator$ActionProxy.run(Unknown Source)
+	at org.eclipse.jface.action.Action.runWithEvent(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.artifact.resolver.DefaultResolutionErrorHandler.throwErrors(Unknown Source)
+	... 45 more
+
+!ENTRY org.maven.ide.eclipse 4 -1 2023-08-17 12:25:07.872
+!MESSAGE Could not get mojo execution paramater value
+!STACK 0
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-compiler-plugin:2.0.2 or one of its dependencies could not be resolved: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.EclipsePluginDependenciesResolver.resolve(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(Unknown Source)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(Unknown Source)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.getMojoParameterValue(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.addProjectSourceFolders(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.GenericJavaProjectConfigurator.addProjectSourceFolders(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.configure(Unknown Source)
+	at org.maven.ide.eclipse.project.configurator.AbstractLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.GenericLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.actions.EnableNatureAction.enableNature(Unknown Source)
+	at org.maven.ide.eclipse.actions.EnableNatureAction.run(Unknown Source)
+	at org.maven.ide.eclipse.actions.AbstractMavenMenuCreator$ActionProxy.run(Unknown Source)
+	at org.eclipse.jface.action.Action.runWithEvent(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.artifact.resolver.DefaultResolutionErrorHandler.throwErrors(Unknown Source)
+	... 45 more
+
+!ENTRY org.maven.ide.eclipse 4 -1 2023-08-17 12:25:07.874
+!MESSAGE Could not get mojo execution paramater value
+!STACK 0
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-compiler-plugin:2.0.2 or one of its dependencies could not be resolved: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.EclipsePluginDependenciesResolver.resolve(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(Unknown Source)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(Unknown Source)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.getMojoParameterValue(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.addProjectSourceFolders(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.GenericJavaProjectConfigurator.addProjectSourceFolders(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.configure(Unknown Source)
+	at org.maven.ide.eclipse.project.configurator.AbstractLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.GenericLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.actions.EnableNatureAction.enableNature(Unknown Source)
+	at org.maven.ide.eclipse.actions.EnableNatureAction.run(Unknown Source)
+	at org.maven.ide.eclipse.actions.AbstractMavenMenuCreator$ActionProxy.run(Unknown Source)
+	at org.eclipse.jface.action.Action.runWithEvent(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(Unknown Source)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(Unknown Source)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Unknown Source)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Unknown Source)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.runUI(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.access$4(Unknown Source)
+	at org.eclipse.ui.internal.Workbench$7.run(Unknown Source)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Unknown Source)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(Unknown Source)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(Unknown Source)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(Unknown Source)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.basicRun(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.run(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.main(Unknown Source)
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.artifact.resolver.DefaultResolutionErrorHandler.throwErrors(Unknown Source)
+	... 45 more
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:25:21.851
+!MESSAGE La publicación ha encontrado algunos problemas y puede que la aplicación no se haya instalado, o puede que se haya instalado correctamente pero no haya podido iniciarse.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:25:21.851
+!MESSAGE La aplicación contiene errores de validación. Corrija los errores en la vista Problemas antes de publicar la aplicación en el servidor. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:25:21.851
+!MESSAGE Si desea permitir que se publiquen las aplicaciones que contengan errores en el servidor, habilite el recuadro de selección Permitir publicación en servidor de aplicaciones con errores (Windows > Preferencias >Servidores > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:25:21.851
+!MESSAGE La importación org.codehaus no se puede resolver
+
+!ENTRY org.eclipse.ui.workbench 2 0 2023-08-17 12:25:47.402
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2023-08-17 12:25:47.402
+!MESSAGE Conflict for 'org.eclipse.ui.edit.copy':
+HandlerActivation(commandId=org.eclipse.ui.edit.copy,
+	handler=ActionHandler(org.eclipse.ui.actions.TextActionHandler$CopyActionHandler@943c3214),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@1cc6fc0e,ActivePartExpression(com.ibm.etools.ui.navigator.SDNavigator@853417e0)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@c4145d4)),sourcePriority=1064961)
+HandlerActivation(commandId=org.eclipse.ui.edit.copy,
+	handler=ActionHandler(org.eclipse.jdt.internal.ui.refactoring.reorg.CopyToClipboardAction@b340834d),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@1cc6fc0e,ActivePartExpression(com.ibm.etools.ui.navigator.SDNavigator@853417e0)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@c4145d4)),sourcePriority=1064961)
+
+!ENTRY org.eclipse.ui.workbench 2 0 2023-08-17 12:25:49.455
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2023-08-17 12:25:49.455
+!MESSAGE Conflict for 'org.eclipse.ui.edit.paste':
+HandlerActivation(commandId=org.eclipse.ui.edit.paste,
+	handler=ActionHandler(org.eclipse.jdt.internal.ui.refactoring.reorg.PasteAction@895e79c7),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@1cc6fc0e,ActivePartExpression(com.ibm.etools.ui.navigator.SDNavigator@853417e0)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@c4145d4)),sourcePriority=1064961)
+HandlerActivation(commandId=org.eclipse.ui.edit.paste,
+	handler=ActionHandler(org.eclipse.jdt.internal.ui.refactoring.reorg.PasteAction@895e79c7),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@1cc6fc0e,ActivePartExpression(com.ibm.etools.ui.navigator.SDNavigator@853417e0)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@c4145d4)),sourcePriority=1064961)
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-17 12:26:33.134
+!MESSAGE NLS unused message: ModifierCorrectionSubProcessor_changemodifiertodefault_description in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-17 12:26:33.135
+!MESSAGE NLS unused message: ReorgCorrectionsSubProcessor_50_compliance_changeworkspace_description in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-17 12:26:33.136
+!MESSAGE NLS unused message: ReorgCorrectionsSubProcessor_no_50jre_message in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-17 12:26:33.136
+!MESSAGE NLS unused message: ReorgCorrectionsSubProcessor_50_compliance_changeproject_description in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-17 12:26:33.136
+!MESSAGE NLS unused message: SuppressWarningsSubProcessor_suppress_warnings_initializer_label in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-17 12:26:33.136
+!MESSAGE NLS unused message: LocalCorrectionsSubProcessor_surroundwith_description in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-17 12:26:33.137
+!MESSAGE NLS unused message: ReorgCorrectionsSubProcessor_50_project_compliance_description in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-17 12:26:33.137
+!MESSAGE NLS unused message: ReorgCorrectionsSubProcessor_no_50jre_title in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+
+!ENTRY org.eclipse.osgi 2 1 2023-08-17 12:26:33.138
+!MESSAGE NLS unused message: ReorgCorrectionsSubProcessor_50_workspace_compliance_description in: org.eclipse.jdt.internal.ui.text.correction.CorrectionMessages
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:28:16.849
+!MESSAGE La publicación ha encontrado algunos problemas y puede que la aplicación no se haya instalado, o puede que se haya instalado correctamente pero no haya podido iniciarse.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:28:16.849
+!MESSAGE La aplicación contiene errores de validación. Corrija los errores en la vista Problemas antes de publicar la aplicación en el servidor. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:28:16.849
+!MESSAGE Si desea permitir que se publiquen las aplicaciones que contengan errores en el servidor, habilite el recuadro de selección Permitir publicación en servidor de aplicaciones con errores (Windows > Preferencias >Servidores > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:28:16.849
+!MESSAGE La importación org.codehaus no se puede resolver
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:33:04.524
+!MESSAGE La publicación ha encontrado algunos problemas y puede que la aplicación no se haya instalado, o puede que se haya instalado correctamente pero no haya podido iniciarse.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:33:04.524
+!MESSAGE La aplicación contiene errores de validación. Corrija los errores en la vista Problemas antes de publicar la aplicación en el servidor. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:33:04.524
+!MESSAGE Si desea permitir que se publiquen las aplicaciones que contengan errores en el servidor, habilite el recuadro de selección Permitir publicación en servidor de aplicaciones con errores (Windows > Preferencias >Servidores > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:33:04.524
+!MESSAGE cvc-complex-type.2.4.a: se ha encontrado un contenido no válido que comienza con el elemento 'dependency'. Se esperaba uno de '{"http://maven.apache.org/POM/4.0.0":parent, "http://maven.apache.org/POM/4.0.0":packaging, "http://maven.apache.org/POM/4.0.0":name, "http://maven.apache.org/POM/4.0.0":description, "http://maven.apache.org/POM/4.0.0":url, "http://maven.apache.org/POM/4.0.0":prerequisites, "http://maven.apache.org/POM/4.0.0":issueManagement, "http://maven.apache.org/POM/4.0.0":ciManagement, "http://maven.apache.org/POM/4.0.0":inceptionYear, "http://maven.apache.org/POM/4.0.0":mailingLists, "http://maven.apache.org/POM/4.0.0":developers, "http://maven.apache.org/POM/4.0.0":contributors, "http://maven.apache.org/POM/4.0.0":licenses, "http://maven.apache.org/POM/4.0.0":scm, "http://maven.apache.org/POM/4.0.0":organization, "http://maven.apache.org/POM/4.0.0":build, "http://maven.apache.org/POM/4.0.0":profiles, "http://maven.apache.org/POM/4.0.0":modules, "http://maven.apache.org/POM/4.0.0":repositories, "http://maven.apache.org/POM/4.0.0":pluginRepositories, "http://maven.apache.org/POM/4.0.0":dependencies, "http://maven.apache.org/POM/4.0.0":reports, "http://maven.apache.org/POM/4.0.0":reporting, "http://maven.apache.org/POM/4.0.0":dependencyManagement, "http://maven.apache.org/POM/4.0.0":distributionManagement, "http://maven.apache.org/POM/4.0.0":properties}'.
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:33:35.818
+!MESSAGE La publicación ha encontrado algunos problemas y puede que la aplicación no se haya instalado, o puede que se haya instalado correctamente pero no haya podido iniciarse.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:33:35.818
+!MESSAGE La aplicación contiene errores de validación. Corrija los errores en la vista Problemas antes de publicar la aplicación en el servidor. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:33:35.818
+!MESSAGE Si desea permitir que se publiquen las aplicaciones que contengan errores en el servidor, habilite el recuadro de selección Permitir publicación en servidor de aplicaciones con errores (Windows > Preferencias >Servidores > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:33:35.818
+!MESSAGE El proyecto no puede construirse hasta que se resuelven los errores de vía de construcción
+
+!ENTRY org.eclipse.ui 4 4 2023-08-17 12:34:25.578
+!MESSAGE Plug-in 'org.maven.ide.eclipse.refactoring' contributed an invalid Menu Extension (Path: 'org.eclipse.jdt.ui.refactoring.menu' is invalid): org.maven.ide.eclipse.editor.RenamePomAction
+
+!ENTRY org.eclipse.ui.workbench 2 0 2023-08-17 12:34:27.669
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2023-08-17 12:34:27.669
+!MESSAGE Conflict for 'org.eclipse.wst.jsdt.ui.edit.text.java.open.editor':
+HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
+	handler=ActionHandler(org.eclipse.wst.jsdt.ui.actions.OpenAction@82c7874b),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@1cc6fc0e,ActivePartExpression(com.ibm.etools.ui.navigator.SDNavigator@853417e0)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@c4145d4)),sourcePriority=1064961)
+HandlerActivation(commandId=org.eclipse.wst.jsdt.ui.edit.text.java.open.editor,
+	handler=ActionHandler(org.eclipse.wst.jsdt.ui.actions.OpenAction@82c7874b),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@1cc6fc0e,ActivePartExpression(com.ibm.etools.ui.navigator.SDNavigator@853417e0)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@c4145d4)),sourcePriority=1064961)
+
+!ENTRY org.maven.ide.eclipse 4 0 2023-08-17 12:34:36.975
+!MESSAGE Build error for /iSoccer/pom.xml
+!STACK 0
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-resources-plugin:2.4.1 or one of its dependencies could not be resolved: Missing:
+----------
+1) org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.4.1
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-resources-plugin -Dversion=2.4.1 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-resources-plugin -Dversion=2.4.1 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.4.1
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.EclipsePluginDependenciesResolver.resolve(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(Unknown Source)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(Unknown Source)
+	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.calculateExecutionPlan(Unknown Source)
+	at org.apache.maven.lifecycle.DefaultLifecycleExecutor.execute(Unknown Source)
+	at org.apache.maven.DefaultMaven.doExecute(Unknown Source)
+	at org.apache.maven.DefaultMaven.execute(Unknown Source)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.execute(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.GenericJavaProjectConfigurator.getMavenProjects(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.configure(Unknown Source)
+	at org.maven.ide.eclipse.project.configurator.AbstractLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.GenericLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.actions.UpdateSourcesAction$1.runInWorkspace(Unknown Source)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Unknown Source)
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException: Missing:
+----------
+1) org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.4.1
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-resources-plugin -Dversion=2.4.1 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-resources-plugin -Dversion=2.4.1 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-resources-plugin:maven-plugin:2.4.1
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.artifact.resolver.DefaultResolutionErrorHandler.throwErrors(Unknown Source)
+	... 19 more
+
+!ENTRY org.maven.ide.eclipse 4 -1 2023-08-17 12:34:36.981
+!MESSAGE Could not get mojo execution paramater value
+!STACK 0
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-compiler-plugin:2.0.2 or one of its dependencies could not be resolved: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.EclipsePluginDependenciesResolver.resolve(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(Unknown Source)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(Unknown Source)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.getMojoParameterValue(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.getCompilerLevel(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.collectOptions(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.configure(Unknown Source)
+	at org.maven.ide.eclipse.project.configurator.AbstractLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.GenericLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.actions.UpdateSourcesAction$1.runInWorkspace(Unknown Source)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Unknown Source)
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.artifact.resolver.DefaultResolutionErrorHandler.throwErrors(Unknown Source)
+	... 16 more
+
+!ENTRY org.maven.ide.eclipse 4 -1 2023-08-17 12:34:36.982
+!MESSAGE Could not get mojo execution paramater value
+!STACK 0
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-compiler-plugin:2.0.2 or one of its dependencies could not be resolved: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.EclipsePluginDependenciesResolver.resolve(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(Unknown Source)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(Unknown Source)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.getMojoParameterValue(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.getCompilerLevel(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.collectOptions(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.configure(Unknown Source)
+	at org.maven.ide.eclipse.project.configurator.AbstractLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.GenericLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.actions.UpdateSourcesAction$1.runInWorkspace(Unknown Source)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Unknown Source)
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.artifact.resolver.DefaultResolutionErrorHandler.throwErrors(Unknown Source)
+	... 16 more
+
+!ENTRY org.maven.ide.eclipse 4 -1 2023-08-17 12:34:36.984
+!MESSAGE Could not get mojo execution paramater value
+!STACK 0
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-compiler-plugin:2.0.2 or one of its dependencies could not be resolved: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.EclipsePluginDependenciesResolver.resolve(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(Unknown Source)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(Unknown Source)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.getMojoParameterValue(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.getCompilerLevel(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.collectOptions(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.configure(Unknown Source)
+	at org.maven.ide.eclipse.project.configurator.AbstractLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.GenericLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.actions.UpdateSourcesAction$1.runInWorkspace(Unknown Source)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Unknown Source)
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.artifact.resolver.DefaultResolutionErrorHandler.throwErrors(Unknown Source)
+	... 16 more
+
+!ENTRY org.maven.ide.eclipse 4 -1 2023-08-17 12:34:36.985
+!MESSAGE Could not get mojo execution paramater value
+!STACK 0
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-compiler-plugin:2.0.2 or one of its dependencies could not be resolved: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.EclipsePluginDependenciesResolver.resolve(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(Unknown Source)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(Unknown Source)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.getMojoParameterValue(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.getCompilerLevel(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.collectOptions(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.configure(Unknown Source)
+	at org.maven.ide.eclipse.project.configurator.AbstractLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.GenericLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.actions.UpdateSourcesAction$1.runInWorkspace(Unknown Source)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Unknown Source)
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.artifact.resolver.DefaultResolutionErrorHandler.throwErrors(Unknown Source)
+	... 16 more
+
+!ENTRY org.maven.ide.eclipse 4 -1 2023-08-17 12:34:36.987
+!MESSAGE Could not get mojo execution paramater value
+!STACK 0
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-compiler-plugin:2.0.2 or one of its dependencies could not be resolved: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.EclipsePluginDependenciesResolver.resolve(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(Unknown Source)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(Unknown Source)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.getMojoParameterValue(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.addProjectSourceFolders(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.GenericJavaProjectConfigurator.addProjectSourceFolders(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.configure(Unknown Source)
+	at org.maven.ide.eclipse.project.configurator.AbstractLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.GenericLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.actions.UpdateSourcesAction$1.runInWorkspace(Unknown Source)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Unknown Source)
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.artifact.resolver.DefaultResolutionErrorHandler.throwErrors(Unknown Source)
+	... 16 more
+
+!ENTRY org.maven.ide.eclipse 4 -1 2023-08-17 12:34:36.989
+!MESSAGE Could not get mojo execution paramater value
+!STACK 0
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-compiler-plugin:2.0.2 or one of its dependencies could not be resolved: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.EclipsePluginDependenciesResolver.resolve(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(Unknown Source)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(Unknown Source)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.getMojoParameterValue(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.addProjectSourceFolders(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.GenericJavaProjectConfigurator.addProjectSourceFolders(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.configure(Unknown Source)
+	at org.maven.ide.eclipse.project.configurator.AbstractLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.GenericLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.actions.UpdateSourcesAction$1.runInWorkspace(Unknown Source)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Unknown Source)
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.artifact.resolver.DefaultResolutionErrorHandler.throwErrors(Unknown Source)
+	... 16 more
+
+!ENTRY org.maven.ide.eclipse 4 -1 2023-08-17 12:34:36.991
+!MESSAGE Could not get mojo execution paramater value
+!STACK 0
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-compiler-plugin:2.0.2 or one of its dependencies could not be resolved: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.EclipsePluginDependenciesResolver.resolve(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(Unknown Source)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(Unknown Source)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.getMojoParameterValue(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.addProjectSourceFolders(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.GenericJavaProjectConfigurator.addProjectSourceFolders(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.configure(Unknown Source)
+	at org.maven.ide.eclipse.project.configurator.AbstractLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.GenericLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.actions.UpdateSourcesAction$1.runInWorkspace(Unknown Source)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Unknown Source)
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.artifact.resolver.DefaultResolutionErrorHandler.throwErrors(Unknown Source)
+	... 16 more
+
+!ENTRY org.maven.ide.eclipse 4 -1 2023-08-17 12:34:36.993
+!MESSAGE Could not get mojo execution paramater value
+!STACK 0
+org.apache.maven.plugin.PluginResolutionException: Plugin org.apache.maven.plugins:maven-compiler-plugin:2.0.2 or one of its dependencies could not be resolved: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.plugin.internal.DefaultPluginDependenciesResolver.resolve(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.EclipsePluginDependenciesResolver.resolve(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getPluginDescriptor(Unknown Source)
+	at org.apache.maven.plugin.internal.DefaultMavenPluginManager.getMojoDescriptor(Unknown Source)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.getMojoDescriptor(Unknown Source)
+	at org.maven.ide.eclipse.internal.embedder.MavenImpl.getMojoParameterValue(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.addProjectSourceFolders(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.GenericJavaProjectConfigurator.addProjectSourceFolders(Unknown Source)
+	at org.maven.ide.eclipse.jdt.internal.AbstractJavaProjectConfigurator.configure(Unknown Source)
+	at org.maven.ide.eclipse.project.configurator.AbstractLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.GenericLifecycleMapping.configure(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.internal.project.ProjectConfigurationManager.updateProjectConfiguration(Unknown Source)
+	at org.maven.ide.eclipse.actions.UpdateSourcesAction$1.runInWorkspace(Unknown Source)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(Unknown Source)
+	at org.eclipse.core.internal.jobs.Worker.run(Unknown Source)
+Caused by: org.apache.maven.artifact.resolver.MultipleArtifactsNotFoundException: Missing:
+----------
+1) org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+  Try downloading the file manually from the project website.
+
+  Then, install it using the command: 
+      mvn install:install-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file
+
+  Alternatively, if you host your own repository you can deploy the file there: 
+      mvn deploy:deploy-file -DgroupId=org.apache.maven.plugins -DartifactId=maven-compiler-plugin -Dversion=2.0.2 -Dpackaging=maven-plugin -Dfile=/path/to/file -Durl=[url] -DrepositoryId=[id]
+
+----------
+1 required artifact is missing.
+
+for artifact: 
+  org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.0.2
+
+from the specified remote repositories:
+  central (http://repo1.maven.org/maven2, releases=true, snapshots=false)
+
+	at org.apache.maven.artifact.resolver.DefaultResolutionErrorHandler.throwErrors(Unknown Source)
+	... 16 more
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:34:52.638
+!MESSAGE La publicación ha encontrado algunos problemas y puede que la aplicación no se haya instalado, o puede que se haya instalado correctamente pero no haya podido iniciarse.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:34:52.638
+!MESSAGE La aplicación contiene errores de validación. Corrija los errores en la vista Problemas antes de publicar la aplicación en el servidor. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:34:52.638
+!MESSAGE Si desea permitir que se publiquen las aplicaciones que contengan errores en el servidor, habilite el recuadro de selección Permitir publicación en servidor de aplicaciones con errores (Windows > Preferencias >Servidores > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:34:52.638
+!MESSAGE El proyecto no puede construirse hasta que se resuelven los errores de vía de construcción
+
+!ENTRY org.eclipse.ui 4 4 2023-08-17 12:35:03.459
+!MESSAGE Plug-in 'org.maven.ide.eclipse.refactoring' contributed an invalid Menu Extension (Path: 'org.eclipse.jdt.ui.refactoring.menu' is invalid): org.maven.ide.eclipse.editor.RenamePomAction
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:35:16.853
+!MESSAGE La publicación ha encontrado algunos problemas y puede que la aplicación no se haya instalado, o puede que se haya instalado correctamente pero no haya podido iniciarse.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:35:16.853
+!MESSAGE La aplicación contiene errores de validación. Corrija los errores en la vista Problemas antes de publicar la aplicación en el servidor. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:35:16.853
+!MESSAGE Si desea permitir que se publiquen las aplicaciones que contengan errores en el servidor, habilite el recuadro de selección Permitir publicación en servidor de aplicaciones con errores (Windows > Preferencias >Servidores > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:35:16.853
+!MESSAGE El proyecto no puede construirse hasta que se resuelven los errores de vía de construcción
+
+!ENTRY org.eclipse.ui.workbench 2 0 2023-08-17 12:35:20.902
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2023-08-17 12:35:20.902
+!MESSAGE Conflict for 'org.eclipse.ui.file.properties':
+HandlerActivation(commandId=org.eclipse.ui.file.properties,
+	handler=ActionHandler(org.eclipse.wst.server.ui.internal.view.servers.PropertiesAction@ff0b15f5),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@1cc6fc0e,ActivePartExpression(org.eclipse.wst.server.ui.internal.cnf.ServersView2@ce32cd4f)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@c4145d4)),sourcePriority=1064961)
+HandlerActivation(commandId=org.eclipse.ui.file.properties,
+	handler=ActionHandler(org.eclipse.wst.server.ui.internal.view.servers.PropertiesAction@ff0b15f5),
+	expression=AndExpression(AndExpression(org.eclipse.ui.SubActionBars$1@1cc6fc0e,ActivePartExpression(org.eclipse.wst.server.ui.internal.cnf.ServersView2@ce32cd4f)),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@c4145d4)),sourcePriority=1064961)
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:44:47.418
+!MESSAGE La publicación ha encontrado algunos problemas y puede que la aplicación no se haya instalado, o puede que se haya instalado correctamente pero no haya podido iniciarse.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:44:47.418
+!MESSAGE La aplicación contiene errores de validación. Corrija los errores en la vista Problemas antes de publicar la aplicación en el servidor. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:44:47.418
+!MESSAGE Si desea permitir que se publiquen las aplicaciones que contengan errores en el servidor, habilite el recuadro de selección Permitir publicación en servidor de aplicaciones con errores (Windows > Preferencias >Servidores > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:44:47.418
+!MESSAGE El proyecto no puede construirse hasta que se resuelven los errores de vía de construcción
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:47:47.704
+!MESSAGE La publicación ha encontrado algunos problemas y puede que la aplicación no se haya instalado, o puede que se haya instalado correctamente pero no haya podido iniciarse.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:47:47.704
+!MESSAGE La aplicación contiene errores de validación. Corrija los errores en la vista Problemas antes de publicar la aplicación en el servidor. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:47:47.704
+!MESSAGE Si desea permitir que se publiquen las aplicaciones que contengan errores en el servidor, habilite el recuadro de selección Permitir publicación en servidor de aplicaciones con errores (Windows > Preferencias >Servidores > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:47:47.704
+!MESSAGE El proyecto no puede construirse hasta que se resuelven los errores de vía de construcción
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:48:08.869
+!MESSAGE La publicación ha encontrado algunos problemas y puede que la aplicación no se haya instalado, o puede que se haya instalado correctamente pero no haya podido iniciarse.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:48:08.869
+!MESSAGE La aplicación contiene errores de validación. Corrija los errores en la vista Problemas antes de publicar la aplicación en el servidor. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:48:08.869
+!MESSAGE Si desea permitir que se publiquen las aplicaciones que contengan errores en el servidor, habilite el recuadro de selección Permitir publicación en servidor de aplicaciones con errores (Windows > Preferencias >Servidores > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:48:08.869
+!MESSAGE El proyecto no puede construirse hasta que se resuelven los errores de vía de construcción
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:48:41.655
+!MESSAGE La publicación ha encontrado algunos problemas y puede que la aplicación no se haya instalado, o puede que se haya instalado correctamente pero no haya podido iniciarse.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:48:41.655
+!MESSAGE La aplicación contiene errores de validación. Corrija los errores en la vista Problemas antes de publicar la aplicación en el servidor. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:48:41.655
+!MESSAGE Si desea permitir que se publiquen las aplicaciones que contengan errores en el servidor, habilite el recuadro de selección Permitir publicación en servidor de aplicaciones con errores (Windows > Preferencias >Servidores > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:48:41.655
+!MESSAGE El proyecto no puede construirse hasta que se resuelven los errores de vía de construcción
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:53:16.905
+!MESSAGE La publicación ha encontrado algunos problemas y puede que la aplicación no se haya instalado, o puede que se haya instalado correctamente pero no haya podido iniciarse.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:53:16.905
+!MESSAGE La aplicación contiene errores de validación. Corrija los errores en la vista Problemas antes de publicar la aplicación en el servidor. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:53:16.905
+!MESSAGE Si desea permitir que se publiquen las aplicaciones que contengan errores en el servidor, habilite el recuadro de selección Permitir publicación en servidor de aplicaciones con errores (Windows > Preferencias >Servidores > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:53:16.905
+!MESSAGE El proyecto no puede construirse hasta que se resuelven los errores de vía de construcción
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:54:02.321
+!MESSAGE La publicación ha encontrado algunos problemas y puede que la aplicación no se haya instalado, o puede que se haya instalado correctamente pero no haya podido iniciarse.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:54:02.321
+!MESSAGE La aplicación contiene errores de validación. Corrija los errores en la vista Problemas antes de publicar la aplicación en el servidor. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:54:02.321
+!MESSAGE Si desea permitir que se publiquen las aplicaciones que contengan errores en el servidor, habilite el recuadro de selección Permitir publicación en servidor de aplicaciones con errores (Windows > Preferencias >Servidores > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:54:02.321
+!MESSAGE El proyecto no puede construirse hasta que se resuelven los errores de vía de construcción
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:54:30.597
+!MESSAGE La publicación ha encontrado algunos problemas y puede que la aplicación no se haya instalado, o puede que se haya instalado correctamente pero no haya podido iniciarse.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:54:30.597
+!MESSAGE La aplicación contiene errores de validación. Corrija los errores en la vista Problemas antes de publicar la aplicación en el servidor. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:54:30.597
+!MESSAGE Si desea permitir que se publiquen las aplicaciones que contengan errores en el servidor, habilite el recuadro de selección Permitir publicación en servidor de aplicaciones con errores (Windows > Preferencias >Servidores > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 12:54:30.597
+!MESSAGE El proyecto no puede construirse hasta que se resuelven los errores de vía de construcción
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 16:08:03.039
+!MESSAGE La publicación ha encontrado algunos problemas y puede que la aplicación no se haya instalado, o puede que se haya instalado correctamente pero no haya podido iniciarse.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 16:08:03.039
+!MESSAGE La aplicación contiene errores de validación. Corrija los errores en la vista Problemas antes de publicar la aplicación en el servidor. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 16:08:03.039
+!MESSAGE Si desea permitir que se publiquen las aplicaciones que contengan errores en el servidor, habilite el recuadro de selección Permitir publicación en servidor de aplicaciones con errores (Windows > Preferencias >Servidores > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 16:08:03.039
+!MESSAGE El proyecto no puede construirse hasta que se resuelven los errores de vía de construcción
+
+!ENTRY org.eclipse.ui 4 4 2023-08-17 16:08:06.287
+!MESSAGE Plug-in 'org.maven.ide.eclipse.refactoring' contributed an invalid Menu Extension (Path: 'org.eclipse.jdt.ui.refactoring.menu' is invalid): org.maven.ide.eclipse.editor.RenamePomAction

@@ -1,0 +1,218 @@
+spring boot latest version --> 2.2.1
+
+apache cxf jaxws spring boot maven ---> 3.5.3
+
+SOA Standart 
+
+What:
+
+Why:
+
+Who:
+
+In XSD - XML Schema Definition
+you can  define Reestriction, complex type, order of the elements, number of ocurrences
+
+page JSON - jsfiddle.net
+
+--CReate JSON
+customerJSON = {
+	name:"Luis",
+  lastName:"Longino",
+  skills:["Speak English","Development Sofware"]
+}
+
+--Printer JSON Atribute
+console.log(customerJSON.name)
+
+--PARSING JSON (Convert JSON in a String)
+var jsonString = JSON.stringify(customerJSON);
+
+
+console.log(jsonString)
+
+--Get DATA from JSON array 
+var customerOrderDeSerializable = JSON.parse(jsonString);
+
+console.log(customerOrderDeSerializable.skills[0])
+
+Section 5. SOAP Web Services Concepts
+
+WEB SERVICES: 
+
+	--Are platform independent
+
+we should not SOAP WEB SERVICES when there is no requirements to define a format contract between the web service provider and client
+
+W3C defines all these elements than we can use to send out Web Services requests and recive the responses back
+<soap:Envelope>
+	<soap:header/>
+		<soap:Body/>
+			<creditCard>
+				----------------
+			</creditCard>
+		<soap:Body/>
+</soap:Envelope>
+
+
+¿Which element can be used to communicate errors??
+FAULT
+
+--SOAP header is used to send meta information
+
+--The current version of SOAP is 1.2
+
+WSDL: Web Services Description Languaje 
+	IS A CONTRACT between the web services provider and the consumer
+
+wsdl:Service --tag to find the acceso to web service
+
+SOAP WEb SERVICES 
+	http and XML
+
+When ? 
+Formal Contract
+Non functional requirements
+
+Bindings defines how the soap meesage shoukd look liek for the varios operations
+
+WSDL CONTAIN ALL INFORMATION ABOUT WEB SERVICES
+
+
+---------------STEPS TO CREATE SOAP WEB SERVICE----------
+--CREATE THE WSDL FILE
+--GENERATED THE JAVA STUBS USING TOOLS LIKE WSDL
+--IMPLEMENT THE WEB SERVICES ENDPOINT
+--ADVANTAGES
+	--cONTRACT WITH THE CONSUMER SIGNERD OFF
+	--BETTER INTEROPREABILITY
+
+
+-------------------------------------------------------SECTION 7 JAX-WS AND JAXB------------------------------------------
+
+JAX-WS : SPECIFICATION :  CFX, GLASSFISH
+	 API		: ANNOTATIONS
+
+@javax.jws.WebService
+public class OrderService
+
+@javax.jws.WebMethod
+
+@javax.jws.soap.SOAPBinding :  allows us as develper to specify a particular type of binding
+
+JAXB : Java Architecture for XML Binding provides an easy way to map java clases
+
+Convert XML to Class AND Class to XML 
+
+JAXB implement CFX
+
+Which component or tool in JAXB can generate java files from a XML schema ? xjc
+
+--STEPS TO GENERATE STUBS FROM XML SCHEMA
+1. CREATE PROJECT
+2. CRETAE THE SCHEMAS
+3. USE THE JAXB PLUGIN GENERATE THE STUBS Y USE THEM
+
+
+
+------------------------------------------------------------------------------STEPS TO CREATE WEB SERVICES REST-----------------------------------------------------------------------------
+
+
+-Create Dynamic web PROJECT
+-crear las clases que contiene los metodos del servicio
+-
+
+
+
+
+SOCC_MEX
+jdbc/SOCC_MEX
+jdbc:oracle:thin:@localhost:1521:xe
+
+User: system
+PW: admin
+
+\\VI9XXXP08ALMXCO\Shared
+
+http://localhost:9080/iSoccer/services/jugadores/consultaJugador/LONL970108HMCNCS02/1
+
+
+http://localhost:9080/iSoccer/services/jugadores/creaJugador/
+
+
+{
+  "curp": "FELSK970108HMCNCS0",
+  "name": "ANA",
+  "lastName": "HERNANDEZ",
+  "secondName": "SEGUNDO",
+  "birthday": "2023-05-27 09:34:14",
+  "position": "MEDIO",
+  "direction": "VILLA VICTORIA MEX",
+  "gender": "F",
+  "phone": 7223150766,
+  "email": "ana@gmail.com",
+  "upatedBy": "LUIS",
+  "updatedWhen": "2023-05-27 09:34:14",
+  "region": 1
+}
+
+
+SOCC_MEX
+jdbc/SOCC_MEX
+jdbc:oracle:thin:@localhost:1521:xe
+
+
+User: system
+PW: admin
+
+
+\\VI9XXXP08ALMXCO\Shared
+
+
+http://localhost:9080/iSoccer/services/jugadores/consultaJugador/LONL970108HMCNCS02/1
+http://localhost:9080/iSoccer/services/jugadores/consultaJugadores/1
+http://localhost:9080/iSoccer/services/jugadores/actualizaJugador/
+
+ {
+      "curp": "FELSK970108HMCNCS0",
+      "name": "KARLA CITLALI",
+      "lastName": "FELIPE",
+      "secondName": "SEGUNDO",
+      "birthday": "2023-07-20 13:40:20",
+      "position": "DEFENSA",
+      "direction": "VILLA VICTORIA MEX",
+      "gender": "F",
+      "phone": "7223150766",
+      "email": "ana@gmail.com",
+      "upatedBy": "LUIS",
+      "region": 1
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+#Fri Aug 04 14:52:51 CDT 2023
+module-start-timeout=300000
+runtimes=<?xml version\="1.0" encoding\="UTF-8"?><runtimes>\r\n  <runtime id\="Entorno de ejecuci\u00F3n de Servidor de vista previa web" id-set\="true" location\="C\:/projects/wsREST_maven_FINAL/.metadata/.plugins/com.ibm.etools.wdt.server.core/tmp0" name\="Entorno de ejecuci\u00F3n de Servidor de vista previa web" runtime-type-id\="com.ibm.etools.wdt.server.runtime.10" timestamp\="0"/>\r\n  <runtime alternate-names\="Ap\u00E9ndice de WebSphere Application Server v8.5" current_SDK_Id\="1.6_64" id\="was.base.v85" id-set\="true" location\="C\:/Program Files (x86)/IBM/WebSphere/AppServer" locked\="false" name\="WebSphere Application Server v8.5" runtime-type-id\="com.ibm.ws.ast.st.runtime.v85" stub\="false" test-environment\="true" timestamp\="0"/>\r\n</runtimes>
+eclipse.preferences.version=1

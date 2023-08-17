@@ -1,0 +1,5 @@
+INDEX VERSION 1.126+C:\projects\wsREST_maven_FINAL\.metadata\.plugins\org.eclipse.jdt.core
+1999677452.index
+763234421.index
+1089518509.index
+600600845.index

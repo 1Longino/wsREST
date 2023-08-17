@@ -1,0 +1,4 @@
+#Thu Aug 17 12:21:24 CDT 2023
+eclipse.preferences.version=1
+preferredTargets=default\:default|org.eclipse.lsp4e.debug.toggleBreakpointTarget\:org.eclipse.lsp4e.debug.toggleBreakpointTarget|default,org.eclipse.lsp4e.debug.toggleBreakpointTarget\:default|
+org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8"?><launchPerspectives/>

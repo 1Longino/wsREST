@@ -1,0 +1,13 @@
+#encoding=UTF-8
+#version=1
+com.google.gson.source,2.10.1.v20230109-0753,file:/C:/Users/Luigy/.p2/pool/plugins/com.google.gson.source_2.10.1.v20230109-0753.jar,-1,false
+com.google.guava.source,30.1.0.v20221112-0806,file:/C:/Users/Luigy/.p2/pool/plugins/com.google.guava.source_30.1.0.v20221112-0806.jar,-1,false
+jakarta.websocket.source,2.0.0.v20221203-1659,file:/C:/Users/Luigy/.p2/pool/plugins/jakarta.websocket.source_2.0.0.v20221203-1659.jar,-1,false
+javax.websocket.source,1.0.0.v20140310-1603,file:/C:/Users/Luigy/.p2/pool/plugins/javax.websocket.source_1.0.0.v20140310-1603.jar,-1,false
+org.eclipse.lsp4j.debug.source,0.20.1.v20230228-1531,file:/C:/Users/Luigy/.p2/pool/plugins/org.eclipse.lsp4j.debug.source_0.20.1.v20230228-1531.jar,-1,false
+org.eclipse.lsp4j.generator.source,0.20.1.v20230228-1531,file:/C:/Users/Luigy/.p2/pool/plugins/org.eclipse.lsp4j.generator.source_0.20.1.v20230228-1531.jar,-1,false
+org.eclipse.lsp4j.jsonrpc.debug.source,0.20.1.v20230228-1531,file:/C:/Users/Luigy/.p2/pool/plugins/org.eclipse.lsp4j.jsonrpc.debug.source_0.20.1.v20230228-1531.jar,-1,false
+org.eclipse.lsp4j.jsonrpc.source,0.20.1.v20230228-1531,file:/C:/Users/Luigy/.p2/pool/plugins/org.eclipse.lsp4j.jsonrpc.source_0.20.1.v20230228-1531.jar,-1,false
+org.eclipse.lsp4j.source,0.20.1.v20230228-1531,file:/C:/Users/Luigy/.p2/pool/plugins/org.eclipse.lsp4j.source_0.20.1.v20230228-1531.jar,-1,false
+org.eclipse.lsp4j.websocket.jakarta.source,0.20.1.v20230228-1531,file:/C:/Users/Luigy/.p2/pool/plugins/org.eclipse.lsp4j.websocket.jakarta.source_0.20.1.v20230228-1531.jar,-1,false
+org.eclipse.lsp4j.websocket.source,0.20.1.v20230228-1531,file:/C:/Users/Luigy/.p2/pool/plugins/org.eclipse.lsp4j.websocket.source_0.20.1.v20230228-1531.jar,-1,false
