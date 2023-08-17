@@ -1918,3 +1918,12 @@ HandlerActivation(commandId=org.eclipse.ui.file.properties,
 
 !ENTRY org.eclipse.ui 4 4 2023-08-17 16:08:06.287
 !MESSAGE Plug-in 'org.maven.ide.eclipse.refactoring' contributed an invalid Menu Extension (Path: 'org.eclipse.jdt.ui.refactoring.menu' is invalid): org.maven.ide.eclipse.editor.RenamePomAction
+
+!ENTRY com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 17:30:05.453
+!MESSAGE La publicación ha encontrado algunos problemas y puede que la aplicación no se haya instalado, o puede que se haya instalado correctamente pero no haya podido iniciarse.
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 17:30:05.454
+!MESSAGE La aplicación contiene errores de validación. Corrija los errores en la vista Problemas antes de publicar la aplicación en el servidor. 
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 17:30:05.454
+!MESSAGE Si desea permitir que se publiquen las aplicaciones que contengan errores en el servidor, habilite el recuadro de selección Permitir publicación en servidor de aplicaciones con errores (Windows > Preferencias >Servidores > WebSphere).
+!SUBENTRY 1 com.ibm.etools.wrd.websphere.core 4 4 2023-08-17 17:30:05.454
+!MESSAGE El proyecto no puede construirse hasta que se resuelven los errores de vía de construcción

@@ -1,4 +1,4 @@
-#Thu Aug 17 12:22:14 CDT 2023
+#Thu Aug 17 17:28:12 CDT 2023
 org.eclipse.jdt.internal.ui.navigator.librariesnode=true
 sp_cleanup.remove_private_constructors=true
 sp_cleanup.sort_members_all=false
@@ -13,6 +13,7 @@ typefilter_migrated_2=true
 sp_cleanup.single_used_field=false
 sp_cleanup.remove_unnecessary_casts=true
 sp_cleanup.no_super=false
+org.eclipse.jdt.ui.text.code_templates_migrated=true
 sp_cleanup.use_unboxing=false
 sp_cleanup.add_missing_override_annotations_interface_methods=true
 sp_cleanup.add_missing_nls_tags=false
@@ -94,6 +95,7 @@ sp_cleanup.add_missing_annotations=true
 org.eclipse.jdt.ui.gettersetter.use.is=true
 sp_cleanup.system_property_path_separator=false
 sp_cleanup.stringconcat_stringbuffer_stringbuilder=false
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8"?><templates/>
 sp_cleanup.system_property=false
 sp_cleanup.controlflow_merge=false
 sp_cleanup.double_negation=false

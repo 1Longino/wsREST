@@ -65,10 +65,6 @@ public class WsRestPlayer {
 
 	}
 
-	/**
-	 * This method is for select one player from the database
-	 * 
-	 */
 	@GET
 	@Path("/consultaJugador/{id}/{region}")
 	@Produces({ MediaType.APPLICATION_JSON })

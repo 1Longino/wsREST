@@ -190,11 +190,21 @@ http://localhost:9080/iSoccer/services/jugadores/actualizaJugador/
 
 
 
+echo "# wsREST" >> README.md
+git init
+git add README.md
+git commit -m "I upload project structure"
+git branch -M main
+git remote add origin https://github.com/1Longino/wsREST.git
+git push -u origin main
 
 
-
-
-
+--AFter changing
+	-- git status 
+	-- git add 
+	-- git add .
+	-- git commit 
+	-- git pushh
 
 
 
