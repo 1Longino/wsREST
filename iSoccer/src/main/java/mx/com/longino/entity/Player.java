@@ -187,4 +187,9 @@ public class Player {
 		System.out.println ("juan ");
 	}
 
+	public static toString ()
+	{
+		System.out.println ("Agregango metodo por Luis E ");
+	}
+
   }
