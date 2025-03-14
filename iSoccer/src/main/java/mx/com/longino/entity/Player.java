@@ -182,4 +182,9 @@ public class Player {
 		this.updatedWhen = updatedWhen;
 	}
 	
+	public static toString ()
+	{
+		System.out.println ("juan ");
+	}
+
   }
